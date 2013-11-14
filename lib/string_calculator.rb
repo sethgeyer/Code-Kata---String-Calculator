@@ -10,6 +10,7 @@ class StringCalculator
 			string_of_numbers.to_i
 		else
 			array_of_numbers = string_of_numbers.split(',')
+			total = 0
 			array_of_numbers.each { |number| total += number.to_i }
 			return total
 		end
